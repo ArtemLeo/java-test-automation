@@ -1,10 +1,10 @@
 package com.artemdev;
 
-public class FlightBookingService {
+public class FlightBookingService implements BookingService {
     private int bookingsCount;
 
-    public void bookFlight(int id, Customer customer) {
-        System.out.println("Бронь № " + id + ": " + customer.getFullName());
+    public void book(int id, Customer customer) {
+        System.out.println("Бронируем авиабилеты. Бронь № " + id + ": " + customer.getFullName());
         bookingsCount++;
     }
 
@@ -17,7 +17,7 @@ public class FlightBookingService {
         }
     }
 
-    public void getCurrentBookingsCount() {
+    public void getBookingsCount() {
         System.out.println("Количество броней = " + bookingsCount);
     }
 }

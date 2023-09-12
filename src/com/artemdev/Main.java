@@ -17,9 +17,10 @@ public class Main {
 
     public static void main(String[] args) {
         Customer specialAgent = new Customer("James", "Bond");
-        FlightBookingService flightBookingService = new FlightBookingService();
-        flightBookingService.bookFlight(1, specialAgent);
-        flightBookingService.cancel(1);
-        flightBookingService.getCurrentBookingsCount();
+
+        BookingService bookingService = new HotelBookingService();
+        bookingService.book(1, specialAgent);
+        bookingService.cancel(1);
+        bookingService.getBookingsCount();
     }
 }
