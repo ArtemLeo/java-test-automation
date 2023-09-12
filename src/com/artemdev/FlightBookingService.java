@@ -1,7 +1,7 @@
 package com.artemdev;
 
-public class FlightBookingService implements BookingService {
-    private int bookingsCount;
+public class FlightBookingService extends AbstractBookingService implements BookingService {
+
 
     public void book(int id, Customer customer) {
         System.out.println("Бронируем авиабилеты. Бронь № " + id + ": " + customer.getFullName());
