@@ -2,7 +2,7 @@ package com.artemdev;
 
 import org.junit.Test;
 
-import static org.junit.Assert.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class FlightBookingServiceTest {
     @Test
@@ -13,6 +13,6 @@ public class FlightBookingServiceTest {
         int actualBookingsCount = flightBookingService.getBookingsCount();
         int expectedBookingsCount = 1;
 
-        assertEquals(expectedBookingsCount,actualBookingsCount);
+        assertEquals(expectedBookingsCount, actualBookingsCount, "BookingsCount is not done!");
     }
 }

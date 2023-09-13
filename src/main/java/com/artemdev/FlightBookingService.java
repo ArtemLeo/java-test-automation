@@ -19,6 +19,6 @@ public class FlightBookingService extends AbstractBookingService {
 
     public int getBookingsCount() {
         System.out.println("Количество броней = " + bookingsCount);
-        return 0;
+        return bookingsCount;
     }
 }
