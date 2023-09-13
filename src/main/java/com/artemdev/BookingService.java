@@ -5,5 +5,5 @@ public interface BookingService {
 
     void cancel(int bookingId);
 
-    void getBookingsCount();
+    int getBookingsCount();
 }
