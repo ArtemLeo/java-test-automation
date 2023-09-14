@@ -1,5 +1,8 @@
-package com.artemdev;
+package com.artemdev.assertions;
 
+import com.artemdev.assertions.BookingService;
+import com.artemdev.assertions.Customer;
+import com.artemdev.assertions.FlightBookingService;
 import org.junit.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;

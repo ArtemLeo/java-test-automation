@@ -1,4 +1,4 @@
-package com.artemdev;
+package com.artemdev.assertions;
 
 public interface BookingService {
     void book(int bookingId, Customer customer);

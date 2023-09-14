@@ -1,4 +1,4 @@
-package com.artemdev;
+package com.artemdev.assertions;
 
 public class Customer {
     private final String firstName;
